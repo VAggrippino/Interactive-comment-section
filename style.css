@@ -1,0 +1,252 @@
+:root{
+    --Moderate-blue: hsl(238, 40%, 52%);
+    --Soft-Red: hsl(358, 79%, 66%);
+    --Light-grayish-blue: hsl(239, 57%, 85%);
+    --Pale-red: hsl(357, 100%, 86%);
+    --Dark-blue: hsl(212, 24%, 26%);
+    --Grayish-Blue: hsl(211, 10%, 45%);
+    --Light-gray: hsl(223, 19%, 93%);
+    --very-light-gray: hsl(228, 33%, 97%);
+    --White: hsl(0, 0%, 100%);
+    }
+    *{
+    
+        padding: 0;
+        margin: 0;
+        font-family: rubik;
+    }
+    body{
+    
+        background-color: var(--Light-gray);
+        padding: 1em;
+    }
+    
+    .commentContainer{
+    
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 1.5em;
+        margin-bottom: 1em;
+        border-radius: .3em;
+    }
+    .commentContainer>p{
+
+        margin-bottom: 1em;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    
+    .profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: .5em;
+      
+    }
+    .profile span{
+        font-weight: bolder;
+    }
+    .profile p{
+    font-weight: 300;
+    
+    }
+    .profile img{
+    
+        transform: scale(.7);
+    }
+    .interractive{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .vote{
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        background-color: var(--Light-gray);
+       padding: .5em;
+       border-radius: .3em;
+    }
+    .vote p{
+
+        color: var(--Moderate-blue);
+        font-weight: 500;
+    }
+    .vote button{
+        background-color: transparent;
+        border: none;
+        color: var(--Light-grayish-blue);
+        font-weight: bolder;
+        font-size: 1.4rem;
+        
+    }
+    .vote button:hover{
+
+        color: var(--Moderate-blue);
+        cursor: pointer;
+    }
+    .vote button:focus{
+        color: var(--Moderate-blue);
+    }
+    .reply{
+    
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        cursor: pointer;
+    }
+    .reply p{
+        font-weight: bolder;
+        color: var(--Moderate-blue);
+    }
+    .reply:hover{
+
+        opacity: .5;
+    }
+
+    .commentReply{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 1.5em;
+margin-bottom: 2em;
+        margin-left: 1em;
+        border-radius: .3em;
+        
+
+    }
+    .You{
+
+        background-color: var(--Moderate-blue);
+        color: white;
+     width: 3em;
+     text-align: center;
+     border-radius: .1em;
+
+    }
+    .BorderLine{
+        border-left: 1px solid rgb(201, 201, 201);
+      
+    }
+.commentReply>p{
+
+    margin-bottom: 1em;
+}
+    .Blue{
+
+        color: var(--Moderate-blue);
+        font-weight: bold;
+    }
+    .EditComment{
+
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    .EditComment div{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     
+    }
+    .Delete{
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        cursor: pointer;
+    }
+    .Delete:hover{
+
+        opacity: .5;
+    }
+    .Delete p{
+
+        color: var(--Soft-Red);
+        font-weight: bold;
+    }
+    .Edit{
+
+        display: flex;
+        flex-direction: row;
+        gap: .5em;
+        cursor: pointer;
+    }
+    .Edit:hover{
+
+        opacity: .5;
+    }
+    .Edit p{
+
+        color: var(--Moderate-blue);
+        font-weight: bold;
+    }
+
+    footer{
+display: flex;
+flex-direction: column;
+        background-color: white;
+    width: 100%;
+    border-radius: .3em;
+    }
+
+    footer>div{
+
+        display: flex;
+        flex-direction: row;
+      align-items: center;
+      gap: 29em;
+      margin-left: 1em;
+    }
+    footer input{
+
+        display: flex;
+        flex-direction: row;
+    padding-left: 1em;
+    padding-bottom: 3em;
+height: 5em;
+        margin: 2em;
+        border-radius: .5em;
+        border: .3px solid rgb(228, 228, 228);
+    }
+ footer button{
+
+    background-color: var(--Moderate-blue);
+    color: white;
+ width: 8em;
+ padding: 1em;
+ border: none;
+ font-weight: bolder;
+ border-radius: .3em;
+ }
+    footer img{
+
+        transform: scale(.6);
+    }
+
+    @media screen and (min-width:700px){
+       
+.main-contain{
+
+    padding:2em 25em;
+}
+
+.commentContainer{
+
+    display: grid;
+}
+.vote{
+
+}
+
+
+
+
+        
+    }
