@@ -234,15 +234,48 @@ height: 5em;
        
 .main-contain{
 
-    padding:2em 25em;
+    --target-comment-width: 40rem;
+    --padding-h: calc((100% - var(--target-comment-width)) / 2);
+    padding:2em var(--padding-h);
 }
 
-.commentContainer{
+.commentContainer, .commentReply{
 
     display: grid;
+    max-width: var(--target-comment-width);
+    gap: 0 10px;
+    grid-template-rows: 4rem auto;
+    grid-template-columns: 3rem auto auto;
+    grid-template-areas:
+        "vote profile actions"
+        "vote main main";
+}
+.profile{
+
+    grid-area: profile;
+}
+:is(.commentContainer, .commentReply) > p {
+
+    grid-area: main;
+}
+.interractive{
+
+    grid-area: 1 / 1 / 3 / 4;
+    display: grid;
+    grid-template: subgrid / subgrid;
 }
 .vote{
 
+    grid-area: vote;
+    flex-flow: column;
+    align-self: start;
+}
+
+.reply, .EditComment {
+
+    grid-area: actions;
+    justify-content: end;
+    align-items: start;
 }
 
 
